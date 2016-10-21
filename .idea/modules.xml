@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/javatools.iml" filepath="$PROJECT_DIR$/javatools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/single_redis/single_redis.iml" filepath="$PROJECT_DIR$/single_redis/single_redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springdataredis/springdataredis.iml" filepath="$PROJECT_DIR$/springdataredis/springdataredis.iml" />
     </modules>
   </component>
