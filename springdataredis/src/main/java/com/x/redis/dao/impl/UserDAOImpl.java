@@ -16,7 +16,7 @@ import java.io.Serializable;
 public class UserDAOImpl implements UserDAO {
 
     @Autowired
-    protected RedisTemplate<Serializable, Serializable> redisTemplate;
+    protected RedisTemplate<Serializable,Serializable> redisTemplate;
 
     @Override
     public void saveUser(final User user) {

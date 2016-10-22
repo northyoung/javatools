@@ -8,6 +8,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/springdataredis/pom.xml" />
+        <option value="$PROJECT_DIR$/single_redis/pom.xml" />
       </list>
     </option>
   </component>
