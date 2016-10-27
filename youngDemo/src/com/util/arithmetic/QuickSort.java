@@ -1,7 +1,5 @@
 package com.util.arithmetic;
 
-import com.sun.xml.internal.bind.v2.model.annotation.Quick;
-
 /**
  * 快速
  * Created by young on 2015/6/7.
@@ -19,18 +17,15 @@ public class QuickSort {
         int i = left,j = right;
         int CenterNum = a[i];
         while(left < right){
-            for(;CenterNum > a[right];right--){ //先从右向左找
-                a[left] = a[right];
-                a[right] = CenterNum;
-            }
-
-            for(;CenterNum < a[left];left++){ //在从左向右找
-                a[right] = a[left];
-                a[left] = CenterNum;
-            }
+            while(left < right && CenterNum <= a[right])
+                right--;
+            a[left] = a[right];
+            while(left < right && CenterNum >= a[left])
+                left++;
+            a[right] = a[left];
         }
         a[left] = CenterNum;
-        return i;
+        return left;
     }
 
     //进行分治法
@@ -44,9 +39,9 @@ public class QuickSort {
 
     public static void main(String[] stra) {
 
-        int a[] = {23, 53, 77, 36, 84, 76, 93, 13, 45, 23};
+        int a[] = {23, 53, 77, 36, 84, 76, 93, 13, 45, 23,1,22,3333};
         QuickSort quickSort = new QuickSort();
-        quickSort.quickSort(a, 0, a.length);
+        quickSort.quickSort(a, 0, a.length-1);
 
         for (int i = 1; i <= a.length; i++)
             System.out.println(a[i - 1]);
