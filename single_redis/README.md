@@ -1,0 +1,1 @@
+###不使用spring-data-redis整合

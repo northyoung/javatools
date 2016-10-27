@@ -16,10 +16,10 @@ import java.io.Serializable;
 public class UserDAOImpl implements UserDAO {
 
     @Autowired
-    protected RedisTemplate<Serializable, Serializable> redisTemplate;
+    protected RedisTemplate<Serializable,Serializable> redisTemplate;
 
     @Override
-    public void savaUsee(final User user) {
+    public void saveUser(final User user) {
         redisTemplate.execute(new RedisCallback<Object>() {
             @Override
             public Object doInRedis(RedisConnection redisConnection) throws DataAccessException {
