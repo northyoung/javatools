@@ -1,10 +1,7 @@
 package test.util;
 
-import static org.junit.Assert.*;
-
-import org.junit.Test;
-
 import com.util.classutil.ClassUtil;
+import org.junit.Test;
 
 public class TestClassUtil {
 

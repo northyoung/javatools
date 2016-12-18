@@ -1,9 +1,7 @@
 package com.ACM;
 
-import com.util.arithmetic.QuickSort;
-import com.util.common.CommonUtil;
-
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  * Created by young on 2015/6/7.
@@ -44,7 +42,7 @@ public class AcmPro {
 
         for(int i=0;i<tmpList.size();i++){
             char[] charList = tmpList.get(i).toString().toCharArray();
-            QuickSort.QuickSort(charList,1,charList.length);
+//            QuickSort.QuickSort(charList,1,charList.length);
             System.out.println(charList);
         }
     }
